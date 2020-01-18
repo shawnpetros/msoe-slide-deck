@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.type = 'text/css'
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? 'css/print/pdf.css'
+        : 'css/print/paper.css'
+      document.getElementsByTagName('head')[0].appendChild(link)
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>What the heck is DevOps</h2>
+          <p>by Shawn Petros</p>
+        </section>
+        <section data-background-video="whatisdevops.mov">
+          <div
+            style="background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 20px;border-radius: 5px;"
+          >
+            <h2>Seriously...</h2>
+            <p>What the heck is DevOps?</p>
+          </div>
+        </section>
+        <section
+          data-background="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif"
+        >
+          <div>
+            <blockquote
+              cite="https://www.atlassian.com/devops"
+              style="background-color: rgba(0, 0, 0, 0.5);border-radius: 5px;"
+            >
+              &ldquo;At its essence, DevOps is a culture, a movement, a
+              philosophy.&rdquo;
+            </blockquote>
+          </div>
+        </section>
+        <section>
+          <h2>But Seriously, what is DEVOPS‽‽‽</h2>
+          <p>(ask me about interrobangs later)</p>
+        </section>
+        <section>
+          <blockquote>
+            &ldquo;DevOps is supply chain for code...but also it's a culture, a
+            movement, and a philosophy...&rdquo; <br /><br />-- Shawn Petros
+          </blockquote>
+        </section>
+        <section>
+          <section>
+            <p>write, build, test, deploy</p>
+            <img
+              src="https://jenkins.io/images/post-images/blueocean/pipeline-run.png"
+            />
+          </section>
+          <section>
+            write
+            <pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+                import React, { useState } from 'react';
+
+                function Example() {
+                    const [count, setCount] = useState(0);
+
+                    return (
+                        &lt;div&gt;
+                        &lt;p&gt;You clicked {count} times&lt;/p&gt;
+                        &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+                        Click me
+                        &lt;/button&gt;
+                        &lt;/div&gt;
+                        );
+                    }
+                </code></pre>
+          </section>
+          <section>
+            <p>build</p>
+            <img src="https://imgs.xkcd.com/comics/compiling.png" />
+          </section>
+          <section>
+            <p>test</p>
+            <img
+              src="https://s3.ap-south-1.amazonaws.com/revathskumar-blog-images/2018/jest-shared-tests/jest-shared-example-2.png"
+            />
+          </section>
+          <section>
+            <p>deploy</p>
+            <img
+              src="https://media2.giphy.com/media/l0Iyp1kPGmDWVKV20/giphy.gif"
+            />
+          </section>
+        </section>
+        <section>Make sense yet?</section>
+        <section>Slide 2</section>
+        <section>Slide 2</section>
+        <section>Slide 2</section>
+        <section>
+          <section>
+            <h1>AMA</h1>
+          </section>
+          <section>
+            <h2>seriously, anything</h2>
+          </section>
+          <section>
+            docker, k8s, node, react, CI, CD, git, bash, AWS...there's probably
+            more, just ask
+            <div>
+              <img
+                style="border: none;"
+                height="100px"
+                src="https://tr2.cbsistatic.com/hub/i/r/2016/10/18/831f017c-ee68-4bd6-8a5c-ab31b4d35d6d/resize/770x/1cedcf2f03388a9720835a628a8a9765/dockerhero.jpg"
+              />
+              <img
+                style="border: none;"
+                height="100px"
+                src="https://www.ctl.io/onramp-image/eco-logo-1f4bbe50d92cdefe6eefb6fd887603e1.svg"
+              />
+              <img
+                style="border: none;"
+                height="100px"
+                src="https://markojs.com/node-0fc14864.jpg"
+              />
+            </div>
+            <div>
+              <img
+                style="border: none;"
+                height="100px"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png"
+              />
+              <img
+                style="border: none;"
+                height="100px"
+                src="https://cdn.vox-cdn.com/thumbor/A4_6e24biy8bp4ahrL-TNfaircI=/0x0:2040x1360/1200x800/filters:focal(1287x538:1613x864)/cdn.vox-cdn.com/uploads/chorus_image/image/63739082/git.0.jpg"
+              />
+              <img
+                style="border: none;"
+                height="100px"
+                src="https://linuxhandbook.com/wp-content/uploads/bash-shell-logo.jpg"
+              />
+              <img
+                style="border: none;"
+                height="100px"
+                src="https://yt3.ggpht.com/-kLxukT5wJ9U/AAAAAAAAAAI/AAAAAAAAAAA/TWoI-d9ak2Y/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"
+              />
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        hash: true,
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/highlight/highlight.js' },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      })
+    </script>
+  </body>
+</html>
